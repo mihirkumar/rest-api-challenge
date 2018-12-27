@@ -1,6 +1,6 @@
 # REST API Challenge
 
-This repository contains code for a fully functional REST API built with Flask and Elasticsearch.
+This repository contains code for a fully functional REST API built with Flask and Elasticsearch that supports storage and retrieval of contacts.
 
 ## Running the API
 
