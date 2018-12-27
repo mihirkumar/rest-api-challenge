@@ -37,3 +37,13 @@ The following requests are supported by this API:
 * ```GET /contact/{name}``` : This will return the contact by a unique name provided in the request.
 * ```PUT /contact/{name}?name=test&number=1234567890&email=test@test.com&address=Vienna``` : This will update the unique contact of provided name. Errors if contact is not found.
 * ```DELETE /contact/{name}``` : This will delete the unique contact of provided name. Errors if contact is not found.
+
+## Parameter Constraints
+
+Every contact must abide by the following constraints:
+* Name should be at most 50 characters.
+* Phone number should be at most 10 characters.
+* Email ID should be at most 30 characters.
+* Address should be at most 100 characters.
+
+Please keep these constraints in mind while making requests to the API.
