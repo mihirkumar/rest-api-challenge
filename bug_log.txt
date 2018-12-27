@@ -1,0 +1,2 @@
+Bug log:
+1) cURL does not send requests such as /contact?pageSize=1&page=2&query=3 correctly. It only sends the first input correctly. Using Postman to make requests resolves the issue, indicating that the issue arises for cURL and not the flask application.
