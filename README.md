@@ -28,3 +28,12 @@ In Command Prompt(Windows) or Terminal(mac OS/Linux), run:
 In Command Prompt(Windows) or Terminal(mac OS/Linux), while in the active virtual environment, run: 
 
 ``` python -m unittest tests.py ```
+
+## Supported requests with format
+
+The following requests are supported by this API:
+* GET /contact?pageSize={}&page={}&query={} : This will return all contacts matching the query. If the query is empty, returns all contacts stored.
+* POST /contact?name=test&number=1234567890&email=test@test.com&address=Vienna : This will create a new contact with provided details.
+* GET /contact/{name} : This will return the contact by a unique name provided in the request.
+* PUT /contact/{name}?name=test&number=1234567890&email=test@test.com&address=Vienna : This will update the unique contact of provided name. Errors if contact is not found.
+* DELETE /contact/{name} : This will delete the unique contact of provided name. Errors if contact is not found.
