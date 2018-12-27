@@ -21,7 +21,7 @@ In Command Prompt(Windows) or Terminal(mac OS/Linux), run:
 * urllib3 (1.24.1)
 * Werkzeug (0.14.1)
 6. In Command Prompt, run ``` set flask = app.py ``` followed by ``` flask run ```. This will start a server serving the API at http://127.0.0.1:5000 .
-7. That's it! Send a POST request to http://127.0.0.1:5000 using [Postman](https://www.getpostman.com/) or a tool of your choice.
+7. That's it! Send a POST request to http://127.0.0.1:5000 using [Postman](https://www.getpostman.com/) or a tool of your choice. Please also make sure Elasticsearch is running.
 
 ## Running unit tests
 
